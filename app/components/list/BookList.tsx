@@ -7,6 +7,7 @@ interface BookListProps {
 }
 
 const BookList:React.FC<BookListProps> =  ({ books, onSelectBook }) => {
+  console.log(books)
   const renderItem = ({ item }: {item: Book}) => (
     <Pressable style={styles.book} onPress={() => onSelectBook(item)}>
       <View style={styles.itemContainer}>

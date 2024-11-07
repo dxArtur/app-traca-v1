@@ -33,10 +33,10 @@ const ProfileScreen: React.FC = () => {
                     userNick={user?.nick!}
                     onSignOut={signOut}
                 />
-                <ProfileStatsOverview
+                {/* <ProfileStatsOverview
                     followersCount={user?.followers.length!}
                     postsCount={user?.posts.length!}
-                />
+                /> */}
                 {/* <ProfileTabsOverview
                     publications={user?.posts!}
                     renderLists={()=>{}}
